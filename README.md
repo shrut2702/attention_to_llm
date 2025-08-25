@@ -37,11 +37,9 @@ This repository is my journal for hands-on exploration of building and training 
 
 ## Key Learnings
 
-```
-"What I cannot create,
-    I do not understand"
-            - Richard P. Feynman
-```
+> "What I cannot create,
+>     I do not understand"
+>             - Richard P. Feynman
 
 Having just an abstract idea of a concept isn't enough to solve a problem fundamentally. With above aim in my mind and freely following the curiosity about workings of a LLM, I started my LLM journey. In this journey, I have tried to piece together each component - from basic tokenization to intricate attention mechanisms to autoregressively generate coherent text - by building them from zero.
 
