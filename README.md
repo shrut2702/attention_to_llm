@@ -35,6 +35,10 @@ This repository is my journal for hands-on exploration of building and training 
   - Experimented with different LoRA ranks (8, 16, 32, 128) to find optimal balance.
   - Compared performance with and without considering instruction tokens in training loss.
 
+### 7. Preference Alignment
+- Implemented preference alignment to train LLM to align its response with user's preference like tone, structure, details, relevance, etc.
+- Used Direct Preference Optimization approach over instruction-tuned LLM.
+
 ## Key Learnings
 
 > "What I cannot create,  
