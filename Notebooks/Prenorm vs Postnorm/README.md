@@ -32,6 +32,6 @@ The model (postnorm) took 110.01s to train.
 
 ### **Findings**
 
-The model training with postnorm resulted into gradient spikes, which unstabilizes the training. This happens because gradients in earlier layers are compounded as layernorm which is applied in main highway (or after residual connection) scales the activations.
+The model training with postnorm resulted into gradient spikes, which unstabilizes the training. This happens because gradients in earlier layers are compounded as layernorm which is applied in main highway (or after residual connection) scales the activations. Whereas, the prenorm had relatively fewer and smaller spikes i.e. low variance in gradients across steps.
 
 ![Global Gradient Norm Across Training Steps](./Global%20Gradient%20Norm%20Across%20Training%20Steps.png)
