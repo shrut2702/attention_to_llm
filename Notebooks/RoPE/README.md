@@ -1,6 +1,6 @@
 # **RoPE (Rotary Position Embedding)**
 
-Implemented the go to architectural tweak for position encoding used in contemporary LLMs. RoPE overcomes the drawbacks of the alternative position encoding techniques like sine, absolute and relative embeddings. Unlike absolute embeddings, the RoPE is position invariant i.e., the attention score between between two embeddings that are same distance or positions apart regardless of their absolute positions will be the same in entire sequence, and it is also more efficient than relative embeddings. 
+Implemented the go to architectural tweak for position encoding used in contemporary LLMs. RoPE overcomes the drawbacks of the alternative position encoding techniques like sine, absolute and relative embeddings. Unlike absolute embeddings, the RoPE is position invariant i.e., the attention score between two embeddings that are same distance or positions apart regardless of their absolute positions will be the same in entire sequence, and it is also more efficient than relative embeddings. 
 
 Here, each embedding is rotated by theta times a scaling factor of its position. 
 
