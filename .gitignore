@@ -1,1 +1,3 @@
-git rm -r --cached <directory>
+__pycache__/
+*.py[cod]
+*$py.class
