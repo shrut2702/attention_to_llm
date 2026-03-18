@@ -77,7 +77,7 @@ Following are the graphs for token distribution across experts during training (
 ![Without Load Balancing Loss](./moe_4e_token_dist_no_bal.png)
 ![With Load Balancing Loss](./moe_4e_token_dist_with_bal.png)
 
-Observation: As expected, training MoE with load balancing loss trains router better to uniformly route tokens to each expert. This is because the derivative of load balancing loss w.r.t. output probability from router is proportional to fraction of total tokens each expert receives and hence, higher expert usage -> higher grad -> stronger downweighting -> lowering probability for that expert.
+Observation: As expected, training MoE with load balancing loss trains router better to uniformly route tokens to each expert than the one without the load balancing loss where expert 3 dominates. This is because the derivative of load balancing loss w.r.t. output probability from router is proportional to fraction of total tokens each expert receives and hence, higher expert usage -> higher grad -> stronger downweighting -> lowering probability for that expert.
 
 ### **3. Loss Convergence Across More Fine-Grained Experts**
 
